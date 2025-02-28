@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,6 +38,13 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    
+    # Third-party apps
+    'crispy_forms',           # For Bootstrap form styling
+    'crispy_bootstrap5',      # Bootstrap 5 template pack for crispy forms
+
+    # Local apps
+    'core',                   # Your main app for models, views, etc.
 ]
 
 MIDDLEWARE = [
@@ -117,7 +125,16 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+# Media files (Uploaded files)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Directory for user-uploaded files
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Crispy Forms Configuration
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"  # Allow Bootstrap 5 template pack
+CRISPY_TEMPLATE_PACK = "bootstrap5"           # Set Bootstrap 5 as the default template pack
+
