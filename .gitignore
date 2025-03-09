@@ -1,5 +1,5 @@
 # Ignore Python virtual environment
-localssws/
+eoc/
 
 # Ignore compiled Python files
 *.pyc
