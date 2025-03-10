@@ -1,5 +1,6 @@
 /* Custom styles */
 #quick-exit {
+    top: 6%;  /* Position the button 5% from the top of the page */
     z-index: 1000;
 }
 
