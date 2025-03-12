@@ -1,10 +1,22 @@
 /* Custom styles */
 #quick-exit {
+    top: 6%;
     z-index: 1000;
-    margin-top: 5%;
 }
 
 .navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-custom {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #374f59;
 }
