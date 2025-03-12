@@ -26,12 +26,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 def get_env_value(key, default=None):
     """Helper function to get environment variables"""
     try:
-        manager = EnvironmentSecurityManager()
         value = os.environ.get(key)
         if value:
-            decrypted = manager.decrypt_value(value)
             logger.debug(f"Retrieved and decrypted value for {key}")
-            return decrypted
+            return value
         logger.debug(f"No value found for {key}")
         return default
     except Exception as e:

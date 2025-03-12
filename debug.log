@@ -58,3 +58,4 @@ Watching for file changes with StatReloader
 "GET / HTTP/1.1" 200 5623
 "GET /static/accreditations/accreditation1.png HTTP/1.1" 404 1858
 "GET /static/accreditations/accreditation2.png HTTP/1.1" 404 1858
+Watching for file changes with StatReloader
