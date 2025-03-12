@@ -1,5 +1,6 @@
 # Ignore Python virtual environment
 eoc/
+.python-version
 
 # Ignore compiled Python files
 *.pyc
