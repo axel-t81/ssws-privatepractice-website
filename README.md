@@ -6,4 +6,4 @@ This app will act as the website and portal for SSWS.
 In it's original iteration, the website will be a simple branding and informational business website, but ideally over time more functionality will be added to transform it into a fully-fledged social work portal.
 
 ### Current Goals
-A boilerplate app is now up and running, and from here we need to add a boilerplate set of Template to render the front-end. Beyond that we need to customise these Templates to create the 'branding and informational' website.  
+A boilerplate app is now up and running. Just a landing page is being requested at this point, and from here it's a wait on what updates are needed to the boilerplate landing page.
