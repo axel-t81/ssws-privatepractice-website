@@ -4,20 +4,25 @@
 
 {% block content %}
     <!-- Hero Section -->
-    <section class="bg-light py-5 text-center">
+    <section class="bg-white py-5 text-center">
         <div class="container">
             <h1 class="display-4">Ethics of Care Social Work</h1>
             <p class="lead">Providing compassionate and professional social work services.</p>
         </div>
     </section>
 
+    <!-- Hero Image Section -->
+    <section class="position-relative">
+        <img src="{% static 'assets/nature-jump.jpg' %}" alt="Nature Jump" class="img-fluid w-100 shadow-lg" style="max-height: 500px; object-fit: cover;">
+    </section>
+
     <!-- Services Section -->
-    <section id="services" class="py-5">
-        <div class="container">
+    <section id="services" class="py-5" style="scroll-margin-top: 3em;">
+        <div class="container py-4">
             <h2 class="text-center mb-4">Our Services</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 shadow-sm hover-shadow-lg">
                         <div class="card-body">
                             <h3 class="card-title">Case Management and Advocacy</h3>                   
                             <p class="card-text">
@@ -33,10 +38,49 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                    <div class="card h-100 shadow-sm hover-shadow-lg">
                         <div class="card-body">
-                            <h3 class="card-title">Service 2</h3>
-                            <p class="card-text">Brief description of Service 2.</p>
+                            <h3 class="card-title">Clinical Social Work / Counselling</h3>                   
+                            <p class="card-text">
+                                <ul>
+                                    <li>Anxiety</li>
+                                    <li>Self-esteem and Self-worth</li>
+                                    <li>Grief and Loss</li>
+                                    <li>Alcohol and Drug Abuse Recovery</li>
+                                    <li>Recovery after Burnout and Breakdown</li>
+                                    <li>Life Stage Transition - Menopause and Retirement</li>
+                                    <li>Youth Work</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm hover-shadow-lg">
+                        <div class="card-body">
+                            <h3 class="card-title">Capacity and Life Planning Support</h3>                   
+                            <p class="card-text">
+                                <ul>
+                                    <li>Advanced Care Planning and Plan Writing</li>
+                                    <li>Guardianship</li>
+                                    <li>Power of Attorney</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm hover-shadow-lg">
+                        <div class="card-body">
+                            <h3 class="card-title">Report Writing</h3>                   
+                            <p class="card-text">
+                                <ul>
+                                    <li>Biopsychosocial Report Writing for Legal</li>
+                                    <li>Support Letters for Housing, Centrelink, NDIS</li>
+                                </ul>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -44,10 +88,35 @@
         </div>
     </section>
 
+    <!-- Flowers Hero Section -->
+    <section class="position-relative">
+        <img src="{% static 'assets/long-road.png' %}" alt="Flowers" class="img-fluid w-100 shadow-lg" style="max-height: 250px; object-fit: cover;">
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
+    <section id="get-started" class="py-5 bg-light" style="scroll-margin-top: 3em;">
+        <div class="container py-4">
+            <h2 class="text-center mb-4">Get Started</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-9 border border-primary">
+                    <h4 class="text-center mb-4">How We Get Started</h4>
+                    <p class="text-center mb-4">
+                        <ol>
+                            <li>Submit Your Details</li>
+                            <li>We Review Your Details</li>
+                            <li>We Contact You</li>
+                            <li>We Schedule a Meeting</li>
+                            <li>We Start Working Together</li>
+                        </ol>
+                    </p>
+
+                    <h4 class="text-center mb-4">Submit Your Details</h4>
+                    <p class="text-center mb-4">
+                        ONLINE FORM WILL GO HERE
+                    </p>
+                </div>
+            </div>
+            <!--
             {% if messages %}
                 {% for message in messages %}
                     <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
@@ -61,6 +130,7 @@
                     {% crispy form %}
                 </div>
             </div>
+            -->
         </div>
     </section>
 {% endblock %}
