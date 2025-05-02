@@ -35,6 +35,11 @@ main {
     transform: translateY(-5px);
 }
 
+/* Custom footer color */
+.custom-footer {
+    background-color: #40356e;
+}
+
 body {
     /* Define the font family with fallbacks */
     font-family: 'Bobby Jones Soft', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

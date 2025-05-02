@@ -6,11 +6,25 @@
 
 .navbar {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1030;  /* Ensure navbar stays above other content */
+}
+
+.navbar-brand {
+    color: white;
+}
+
+.nav-link {
+    color: white;
 }
 
 .navbar-custom {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: green;
+    background-color: #374f59;
+}
+
+/* Ensure main content doesn't hide behind navbar */
+main {
+    padding-top: 1rem;
 }
 
 .card {
@@ -19,4 +33,28 @@
 
 .card:hover {
     transform: translateY(-5px);
+}
+
+/* Custom footer color */
+.custom-footer {
+    background-color: #40356e;
+}
+
+body {
+    /* Define the font family with fallbacks */
+    font-family: 'Bobby Jones Soft', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+.special-text {
+    /* If you need to use it for specific elements */
+    font-family: "Bobby Jones Soft", -apple-system, BlinkMacSystemFont, 
+                 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@font-face {
+    font-family: 'Bobby Jones Soft';
+    src: url('path/to/bobbyjones-soft.woff2') format('woff2'),
+         url('path/to/bobbyjones-soft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }

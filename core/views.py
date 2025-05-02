@@ -42,3 +42,7 @@ def home(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def costing(request):
+    """Renders the costing page."""
+    return render(request, 'costing.html')
