@@ -46,3 +46,7 @@ def about(request):
 def costing(request):
     """Renders the costing page."""
     return render(request, 'costing.html')
+
+def resources(request):
+    """Renders the resources page."""
+    return render(request, 'resources.html')

@@ -63,10 +63,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     
-    # Third-party apps
-    'crispy_forms',           # For Bootstrap form styling
-    'crispy_bootstrap5',      # Bootstrap 5 template pack for crispy forms
-
     # Local apps
     'core',                   # Your main app for models, views, etc.
 ]
@@ -156,9 +152,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # Directory for user-uploaded file
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"  # Allow Bootstrap 5 template pack
-CRISPY_TEMPLATE_PACK = "bootstrap5"           # Set Bootstrap 5 as the default template pack
 
 # Logging Configuration
 LOGGING = {
