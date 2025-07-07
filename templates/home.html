@@ -174,4 +174,39 @@
             </div>
         </div>
     </section>
+
+<!-- Facebook Pixel Lead Event Tracking -->
+<script>
+// Lead event tracking for JotForm submission
+(function() {
+    // Check if Facebook Pixel is loaded
+    if (typeof fbq !== 'undefined') {
+        
+        // Method 1: Listen for postMessage from JotForm iframe
+        window.addEventListener('message', function(event) {
+            // Verify the message is from JotForm
+            if (event.origin === 'https://form.jotform.com' || event.origin === 'www.jotform.com') {
+                // Check if it's a form submission event
+                if (event.data && (
+                    event.data.type === 'form_submit' || 
+                    event.data.action === 'submit' ||
+                    event.data.includes('submit')
+                )) {
+                    console.log('JotForm submitted - firing Facebook Pixel Lead event');
+                    fbq('track', 'Lead', {
+                        content_name: 'Ethics of Care Contact Form',
+                        content_category: 'Form Submission',
+                        value: 1,
+                        currency: 'AUD'
+                    });
+                }
+            }
+        });
+        
+    } else {
+        console.warn('Facebook Pixel not loaded - Lead tracking unavailable');
+    }
+})();
+</script>
+
 {% endblock %}
